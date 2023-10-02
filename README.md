@@ -1,4 +1,4 @@
-**# Terraform Project 1 ** `rgb(9, 105, 218)`
+**#Terraform Project 1** `rgb(9, 105, 218)`
 
 **## Pre-requisite linux commands: **
 
@@ -8,12 +8,12 @@
 ### aws configure (To add the credentials file & create the config file) 
 #### Note: credentials file contains the'access key' & the 'secret key')
 
-**## Initial requirements **
+**##Initial requirements**
 ### create provider file
 ### create backend file
 
 
-**## Networking **
+**##Networking**
 
 ### 1- create vpc
 ### 2- create internet gateway
@@ -24,7 +24,7 @@
 ### 7- create nat gateway and attach it to private subnets
 
 
-**## Compute**
+**##Compute**
 
 ### 1- create security group which allow ssh from 0.0.0.0/0
 ### 2- create security group that allow ssh and port 3000 from vpc cidr only
