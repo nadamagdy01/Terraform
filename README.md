@@ -1,27 +1,27 @@
 <div align="center">
   <h1 style="color: red;">Terraform Project 1</h1>
 </div>
-# Terraform Project 1
 
 <span style="color: green;">## Pre-requisite Linux Commands:</span>
 
 - Update the package list:
-  sudo apt update
+  - sudo apt update
 - Install AWS CLI:
-  sudo apt install awscli
+  - sudo apt install awscli
 - Verify AWS CLI installation:
-  aws --version
+  - aws --version
 
 - Configure AWS CLI (To add the credentials file & create the config file).
-<span style="color: blue;">Note: The credentials file contains the 'access key' & the 'secret key'.</span>
-  aws configure
+  - aws configure
+    <span style="color: blue;">> Note: The credentials file contains the 'access key' & the 'secret key'.</span>
 
-<span style="color: green;">## Initial Requirements</span>
+## <span style="color: green;">## Initial Requirements</span>
 
 - Create a provider file.
 - Create a backend file.
 
 <span style="color: green;">## Networking</span>
+## <span style="color: green;">Networking</span>
 
 1. Create VPC.
 2. Create an Internet Gateway.
@@ -31,7 +31,7 @@
 6. Attach the Public Route Table to subnets.
 7. Create a NAT Gateway and attach it to private subnets.
 
-<span style="color: green;">## Compute</span>
+## <span style="color: green;">## Compute</span>
 
 1. Create a security group that allows SSH from 0.0.0.0/0.
 2. Create a security group that allows SSH and port 3000 from VPC CIDR only.
