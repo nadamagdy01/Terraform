@@ -2,7 +2,7 @@
   <h1 style="color: red;">Terraform Project 1</h1>
 </div>
 
-<span style="color: green;">## Pre-requisite Linux Commands:</span>
+<span style="color: green;">Pre-requisite Linux Commands:</span>
 
 - Update the package list:
   - sudo apt update
