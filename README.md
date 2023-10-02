@@ -5,7 +5,7 @@
 ![Image Alt Text](https://github.com/nadamagdy01/Terraform/blob/46aad55ebdc272567101509e98c02bcfe1069779/infrastructure.png)
 
 
-## <span style="color: green;">Pre-requisite Linux Commands:</span>
+## Pre-requisite Linux Commands:
 
 - **Update the package list:**
   - sudo apt update
@@ -17,12 +17,12 @@
   - aws configure
     - Note: The credentials file contains the 'access key' & the 'secret key'.
 
-## <span style="color: green;">Initial Requirements</span>
+## Initial Requirements
 
 - Create a provider file.
 - Create a backend file.
 
-## <span style="color: green;">Networking</span>
+## Networking
 
 1. Create VPC.
 2. Create an Internet Gateway.
@@ -32,7 +32,7 @@
 6. Attach the Public Route Table to subnets.
 7. Create a NAT Gateway and attach it to private subnets.
 
-## <span style="color: green;">Compute</span>
+## Compute
 
 1. Create a security group that allows SSH from 0.0.0.0/0.
 2. Create a security group that allows SSH and port 3000 from VPC CIDR only.
