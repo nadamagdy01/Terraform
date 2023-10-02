@@ -2,6 +2,9 @@
   <h1 style="color: red;">Terraform Project 1</h1>
 </div>
 
+![Image Alt Text](https://github.com/nadamagdy01/Terraform/blob/46aad55ebdc272567101509e98c02bcfe1069779/infrastructure.png)
+
+
 ## <span style="color: green;">Pre-requisite Linux Commands:</span>
 
 - Update the package list:
