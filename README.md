@@ -8,14 +8,12 @@
 ## <span style="color: green;">Pre-requisite Linux Commands:</span>
 
 - **Update the package list:**
-  
   - sudo apt update
 - **Install AWS CLI:**
   - sudo apt install awscli
 - **Verify AWS CLI installation:**
   - aws --version
-
-- Configure AWS CLI (To add the credentials file & create the config file).
+- **Configure AWS CLI** (To add the credentials file & create the config file).
   - aws configure
     <span style="color: blue;">> Note: The credentials file contains the 'access key' & the 'secret key'.</span>
 
