@@ -1,19 +1,19 @@
-**# Terraform Project 1**
+**# Terraform Project 1 ** `rgb(9, 105, 218)`
 
-**## Pre-requisite linux commands:**
-**## ______________________________**
+**## Pre-requisite linux commands: **
+
 ### sudo apt update
 ### sudo apt install awscli
 ### aws --version
 ### aws configure (To add the credentials file & create the config file) 
 #### Note: credentials file contains the'access key' & the 'secret key')
 
-**## Initial requirements**
+**## Initial requirements **
 ### create provider file
 ### create backend file
 
 
-**## Networking**
+**## Networking **
 
 ### 1- create vpc
 ### 2- create internet gateway
