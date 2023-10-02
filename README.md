@@ -1,60 +1,27 @@
-**# Terraform Project 1** 
-
-**## Pre-requisite linux commands:**
-
-### sudo apt update
-### sudo apt install awscli
-### aws --version
-### aws configure (To add the credentials file & create the config file) 
-#### Note: credentials file contains the'access key' & the 'secret key')
-
-**## Initial requirements**
-### create provider file
-### create backend file
-
-
-**## Networking**
-
-### 1- create vpc
-### 2- create internet gateway
-### 3- create public route table
-### 4- create private route table
-### 5- create public route
-### 6- attach public route table to subnets 
-### 7- create nat gateway and attach it to private subnets
-
-
-**##Compute**
-
-### 1- create security group which allow ssh from 0.0.0.0/0
-### 2- create security group that allow ssh and port 3000 from vpc cidr only
-### 3- create ec2(bastion) in public subnet with the security group of number 7 here
-### 4- create ec2(application) private subnet with security group of number 8 here
-### 5- Add KeyPair for instances
-### 6- create S3 bucket (To save in it the tfstate file)
-### 7- configure remote backend and configure state locking using dynamo db
-
-<div align="center" style="background-color:#f0f0f0; padding:20px;">
-
+<div align="center">
+  <h1 style="color: red;">Terraform Project 1</h1>
+</div>
 # Terraform Project 1
 
-## Pre-requisite Linux Commands:
+<span style="color: green;">## Pre-requisite Linux Commands:</span>
 
 - Update the package list:
-
+  sudo apt update
 - Install AWS CLI:
-
+  sudo apt install awscli
 - Verify AWS CLI installation:
+  aws --version
 
 - Configure AWS CLI (To add the credentials file & create the config file).
-Note: The credentials file contains the 'access key' & the 'secret key'.
+<span style="color: blue;">Note: The credentials file contains the 'access key' & the 'secret key'.</span>
+  aws configure
 
-## Initial Requirements
+<span style="color: green;">## Initial Requirements</span>
 
 - Create a provider file.
 - Create a backend file.
 
-## Networking
+<span style="color: green;">## Networking</span>
 
 1. Create VPC.
 2. Create an Internet Gateway.
@@ -64,7 +31,7 @@ Note: The credentials file contains the 'access key' & the 'secret key'.
 6. Attach the Public Route Table to subnets.
 7. Create a NAT Gateway and attach it to private subnets.
 
-## Compute
+<span style="color: green;">## Compute</span>
 
 1. Create a security group that allows SSH from 0.0.0.0/0.
 2. Create a security group that allows SSH and port 3000 from VPC CIDR only.
@@ -74,4 +41,3 @@ Note: The credentials file contains the 'access key' & the 'secret key'.
 6. Create an S3 bucket (to save the tfstate file).
 7. Configure remote backend and state locking using DynamoDB.
 
-</div>
