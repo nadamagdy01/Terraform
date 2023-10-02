@@ -13,9 +13,9 @@
   - sudo apt install awscli
 - **Verify AWS CLI installation:**
   - aws --version
-- **Configure AWS CLI** (To add the credentials file & create the config file).
+- **Configure AWS CLI** (To add the credentials file & create the config file):
   - aws configure
-    <span style="color: blue;">> Note: The credentials file contains the 'access key' & the 'secret key'.</span>
+    Note: The credentials file contains the 'access key' & the 'secret key'.
 
 ## <span style="color: green;">Initial Requirements</span>
 
