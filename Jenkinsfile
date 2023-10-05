@@ -11,8 +11,8 @@ pipeline {
                 withcredentials([[
                     $class: 'AmazonWebServicesCredentialsBinding',
                     credentialId: 'aws-jenkins-demo',
-                    AWS_ACCESS_KEY_ID: 'AWS_ACCESS_KEY_ID',
-                    AWS_SECRET_ACCESS_KEY: 'AWS_SECRET_ACCESS_KEY']]){
+                    accessKeyVariable: 'AWS_ACCESS_KEY_ID',
+                    secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]){
                     sh "aws s3 ls"
                 }
         }
