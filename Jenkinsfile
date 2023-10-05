@@ -10,9 +10,9 @@ pipeline {
             steps {
                 script {
                     if (params.ENVIRONMENT == 'dev') {
-                        sh 'terraform init -backend-config=dev.tfvars'
+                        sh 'terraform init -backend-config=backend.tf'
                     } else if (params.ENVIRONMENT == 'prod') {
-                        sh 'terraform init -backend-config=prod.tfvars'
+                        sh 'terraform init -backend-config=backend.tf'
                     } else {
                         error "Invalid environment parameter"
                     }
