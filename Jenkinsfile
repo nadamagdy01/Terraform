@@ -1,11 +1,5 @@
 pipeline {
 
-
-        environment {
-               AWS_ACCESS_KEY_ID    = credentials('AWS_ACCESS_KEY_ID')
-               AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
-    }
-    
     agent any
 
     parameters {
@@ -14,6 +8,18 @@ pipeline {
 
     stages {
         
+                stage('AWS Verification') {
+            steps {
+                withcredentials([[
+                    $class: 'AmazonWebServicesCredentialsBinding',
+                    credentialId: 'aws-jenkins-demo',
+                    accessKeyVariable: 'AWS_ACCESS_KEY_ID',
+                    secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]){
+                    sh "aws s3 ls"
+                }
+        }
+        }
+
         stage('Terraform Init') {
             steps {
                 script {

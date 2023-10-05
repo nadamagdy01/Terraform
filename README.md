@@ -16,6 +16,7 @@
 - **Configure AWS CLI** (To add the credentials file & create the config file):
   - aws configure
     - Note: The credentials file contains the 'access key' & the 'secret key'.
+        >> The credentials file is saved by default in ~/.aws/credentials 
 
 ## Initial Requirements
 
