@@ -1,5 +1,3 @@
-Eng: mahmoud.alaa & Eng: Mohamed Elzedy
------------------
 lab1 
 -----
 
@@ -41,7 +39,5 @@ lab2
 9-verify your email in ses service
 10- create lambda function to send email
 11-create trigger to detect changes in state file and send the email (edit in s3 ) 
-    - Search -> how to let s3 send notification to trigger lambda
-
 
 
