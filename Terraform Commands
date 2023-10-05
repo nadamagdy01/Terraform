@@ -1,0 +1,14 @@
+Terraform Used Commands:
+--------------------------
+terraform init
+Terraform plan
+terraform apply
+terraform destroy
+terraform workspace list
+terraform workspace select default
+terraform plan --var-file prod.tfvars
+terraform destroy --var-file prod.tfvars
+terraform workspace --var-file file_name.tfvars
+terraform workspace list  
+terraform plan --var-file prod.tfvars
+terraform workspace new dev
