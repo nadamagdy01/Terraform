@@ -6,13 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                https://github.com/nadamagdy01/Terraform.git
-                scm checkout: true
-            }
-        }
-
         stage('Terraform Init') {
             steps {
                 script {
