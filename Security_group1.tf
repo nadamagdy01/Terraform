@@ -2,7 +2,7 @@ resource "aws_security_group" "ssh_from_Anywhere" {
   name        = "ssh_sg_from_Anywhere"
   description = "Allow SSH from Anywhere /any IP address"
 
-  vpc_id      = aws_vpc.myVPC.id
+  vpc_id      = module.mynetwork.vpc_id
 
 # Ingress rule (allow SSH from any IP)
   ingress {
