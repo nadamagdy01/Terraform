@@ -15,7 +15,7 @@ pipeline {
                     credentialId: 'aws-jenkins-demo',
                     accessKeyVariable: 'AWS_ACCESS_KEY_ID',
                     secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]){
-                    sh "aws s3 ls"
+                    sh "aws ec2 describe-instance"
                 }
         }
         }
