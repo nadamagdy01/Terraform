@@ -37,7 +37,7 @@ pipeline {
                         sh 'terraform apply -var-file=dev.tfvars -auto-approve'
 
                     } else if (params.ENVIRONMENT == 'prod') {
-                        sh 'terraform apply -var-file=prod.tfvars'
+                        sh 'terraform apply -var-file=prod.tfvars -auto-approve'
                     } else {
                         error "Invalid environment parameter"
                     }
