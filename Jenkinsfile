@@ -34,7 +34,7 @@ pipeline {
             steps {
                 script {
                     if (params.ENVIRONMENT == 'dev') {
-                        sh 'terraform apply -var-file dev.tfvars -auto-approve'
+                        sh 'terraform apply -var-file=dev.tfvars -auto-approve'
 
                     } else if (params.ENVIRONMENT == 'prod') {
                         sh 'terraform apply -var-file=prod.tfvars'
