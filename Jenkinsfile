@@ -19,7 +19,6 @@ pipeline {
                 script {
                     if (params.ENVIRONMENT == 'dev') {
                         sh 'terraform init '
-                        sh 'terraform force-unlock 40c048ab-855e-4788-aa0d-73b9d7d9b438'
                     } else if (params.ENVIRONMENT == 'prod') {
                         sh 'terraform init '
                         
@@ -34,7 +33,7 @@ pipeline {
             steps {
                 script {
                     if (params.ENVIRONMENT == 'dev') {
-                        sh 'terraform apply -var-file=dev.tfvars'
+                        sh 'terraform apply -var-file=dev.tfvars -auto-approve-'
                     } else if (params.ENVIRONMENT == 'prod') {
                         sh 'terraform apply -var-file=prod.tfvars'
                     } else {
